@@ -7,6 +7,9 @@ def copy_files_if_not_exists(src_folder, dest_folder):
     遍历src_folder内的所有子文件夹和子文件，
     如果目标文件夹dest_folder内不存在相同的文件或文件夹，则复制过去。
     """
+    
+    print("modified ...")
+    
     # 确保目标文件夹存在
     if not os.path.exists(dest_folder):
         os.makedirs(dest_folder)
